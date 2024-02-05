@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./app.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body{
             width: 100%;
@@ -16,32 +16,111 @@
             background-size: 100% 100%;
         }
         .side-nav{
-            width: 15%;
             height: 100vh;
         }
     </style>
 </head>
-<body>
-
-    <div class="w-fit h-fit py-3 px-2 rounded-full">
+<body class="flex h-full content-center">
+    <div class="side-nav h-full w-1/16 flex justify-center items-center h-full">
+    <div class="w-fit h-fit py-2 px-2 rounded-3xl bg-gray-500 p-3">
         <ul>
-            <li><i class="fa fa-play-circle large text-white" aria-hidden="true"></i></li>
-            <li><i class=""></i></li>
-            <li><i class=""></i></li>
-            <li><i class=""></i></li>
-            <li><i class=""></i></li>
-            <li><i class=""></i></li>
+            <li><i class="fa fa-lg p-3  fa-play-circle text-white bg-red-500 rounded 3-xl " aria-hidden="true"></i></li>
+            <li><i class="fa fa-lg p-3 fa-plus-square-o text-white" aria-hidden="true"></i></li>
+            <li><i class="fa fa-lg p-3 fa-television text-white" aria-hidden="true"></i></li>
+            <li><i class="fa fa-lg p-3 fa-bluetooth text-white" aria-hidden="true"></i></li>
+            <li><i class="fa fa-lg p-3 fa-home text-white" aria-hidden="true"></i></li>
+            <li><i class="fa fa-lg p-3  fa-search text-white" aria-hidden="true"></i>
+            </li>
         </ul>
     </div>
+</div>
 
-    <div class="content">
-        <div class="">
-            <div class="side-content">
-                
-            </div>
-            <div class="main-content"></div>
+<div class="p-10 backdrop-blur-xl w-1/4 overflow-hidden border-r-2 border-gray-400">
+    <div class="w-1/2 h-fit">
+        <h3 class="text-red-600 text-6xl pb-5">Netflix</h3>
+        <ul>
+            <li class="p-2"><i class="fa fa-lg p-2 text-white fa-play-circle" aria-hidden="true"> Browse</i></li>
+            <li class="p-2"><i class="fa fa-lg p-2 text-white fa-heart" aria-hidden="true"> Wishlist</i></li>
+            <li class="p-2"><i class="fa fa-lg p-2 text-white fa-calendar" aria-hidden="true"> Coming Soon</i>
+            </li>
+        </ul>
+    <h3 class="text-xl text-white">New Trailers 🔥</h3>
+        <div class="bg-[url('./images/shadow.jpg')] w-60 h-40 bg-cover rounded-2xl flex items-end mt-3">
+            <div class="backdrop-blur-xl rounded flex justify-around w-full items-center p-2">
+            <h2>Shadow and Bone</h2>
+            <i class="fa fa-lg fa-play-circle" aria-hidden="true"></i>
         </div>
+        </div>
+        <div class="bg-[url('./images/night.jfif')] w-60 h-40 bg-cover rounded-2xl flex items-end  mt-3">
+            <div class="backdrop-blur-xl rounded flex justify-around w-full items-center p-2">
+                <h2>The Night Agent</h2>
+                <i class="fa fa-lg fa-play-circle" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="bg-[url('./images/witcher.jfif')] w-60 h-40 bg-cover rounded-2xl flex items-end mt-3">
+            <div class="backdrop-blur-xl rounded flex justify-around w-full items-center p-2">
+                <h2>The Witcher</h2>
+                <i class="fa fa-lg fa-play-circle" aria-hidden="true"></i>
+            </div>
+        </div>
+</div>
+</div>
+
+<div class="w-3/4 backdrop-blur-xl my-5">
+    <div class="flex justify-between">
+    <div>
+        <button class="text-2xl	text-white">&lt;</button>
+        <button class="text-2xl	text-white">&gt;</button>
     </div>
+        <input class="backdrop-blur-xl text-white" type="text" placeholder="Search...">
+    <div class="w-1/6 flex justify-between">
+        <button><i class="fa fa-bell text-white" aria-hidden="true"></i></button>
+        <button><i class="fa fa-user text-white" aria-hidden="true"></i></button>
+    </div>
+    </div>
+    <div class="p-10">
+   
+        <div class="bg-[url('./images/blinders.jpg')] w-full h-60 bg-cover bg-no-repeat bg-center rounded-3xl flex items-end">
+            <button class="bg-red-500 text-white rounded-2xl h-10 w-40 mx-5 mb-5">Watch</button>
+            <button class="text-white  bg-gray-500 h-10 w-10 rounded-3xl mb-5"><i class="fa fa-plus" aria-hidden="true"></i>
+            </button>
+        </div>
+<div>
+    <h3 class="text-white text-2xl mt-5">Popcorn Mania</h3>
+<div class="flex flex-row justify-between text-white">
+        <div class="bg-[url('./images/brooklyn.jpg')] w-60 h-60 bg-cover bg-center rounded-3xl flex items-end"><div class="backdrop-blur-xl rounded flex justify-around w-full items-center">
+            <div class="backdrop-blur-xl rounded flex justify-around w-full items-center ">
+                <h2 class="p-3">Brooklyn Nine-Nine</h2>
+                <i class="fa fa-lg fa-play-circle" aria-hidden="true"></i></div>
+        </div></div>
+        <div class="bg-[url('./images/player.jpg')] w-60 h-60 bg-cover bg-center rounded-3xl flex items-end"><div class="backdrop-blur-xl rounded flex justify-around w-full items-center ">
+            <h2 class="p-3">Ready player one</h2>
+            <i class="fa fa-lg fa-play-circle" aria-hidden="true"></i>
+        </div></div>
+        <div class="bg-[url('./images/heist.jpg')] w-60 h-60 bg-cover bg-center rounded-3xl flex items-end"><div class="backdrop-blur-xl rounded flex justify-around w-full items-center">
+            <h2 class="p-3">Money heist</h2>
+            <i class="fa fa-lg fa-play-circle" aria-hidden="true"></i>
+        </div></div>
+        <div class="bg-[url('./images/ash.jpg')] w-60 h-60 bg-cover bg-start rounded-3xl flex items-end"><div class="backdrop-blur-xl rounded flex justify-around w-full items-center">
+            <h2 class="p-3">Ash vs evil dead</h2>
+            <i class="fa fa-lg fa-play-circle" aria-hidden="true"></i>
+        </div></div>
+    </div>
+</div>
+<div>
+    <h3 class="text-white text-2xl mt-5">Continue Watching</h3>
+<div class="flex flex-row justify-between">
+        <div class="bg-[url('./images/notice.jpg')] w-80 h-40 bg-cover bg-start rounded-3xl">
+            <div class="w-full bg-red-500"></div>
+        </div>
+        <div class="bg-[url('./images/extraction.jpg')] w-80 h-40 bg-cover bg-center rounded-3xl"></div>
+        <div class="bg-[url('./images/adam.jpg')] w-80 h-40 bg-cover bg-center rounded-3xl"></div>
+        <div class="bg-[url('./images/guard.jpg')] w-80 h-40 bg-cover bg-center rounded-3xl"></div>
+    </div>
+</div>
+
+</div>
+</div>
 
 </body>
 </html>
